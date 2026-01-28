@@ -1,18 +1,25 @@
 # Midas
-Project repo for the JPMC Advanced Software Engineering Forage program
 
-Task 1: Project Setup
+Project repository for the **JPMC Advanced Software Engineering – Forage Program**.
 
-Here is your task
-1. Fork and Clone the Repository
+---
 
-Fork and clone the project repo, which already contains the scaffold:
+## Task 1: Project Setup
+
+This task focuses on setting up the project environment, configuring dependencies, and validating the setup using automated tests.
+
+---
+
+## 1. Fork and Clone the Repository
+
+Fork and clone the project repository, which already contains the initial scaffold:
 
 🔗 https://github.com/vagabond-systems/forage-midas
 
+```bash
 git clone https://github.com/your-username/forage-midas.git
-
 cd forage-midas
+```
 
 2. Open the Project in Your IDE
 
@@ -49,15 +56,16 @@ Understanding what already exists will help you complete upcoming tasks.
 
 Add the following dependencies to your Spring Boot project, ensuring each is pinned to the specified version:
 
-Dependency	Group	Version
-spring-boot-starter-data-jpa	org.springframework.boot	3.2.5
-spring-boot-starter-web	org.springframework.boot	3.2.5
-spring-kafka	org.springframework.kafka	3.1.4
-h2	com.h2database	2.2.224
-spring-boot-starter-test	org.springframework.boot	3.2.5
-spring-kafka-test	org.springframework.kafka	3.1.4
-kafka (Testcontainers)	org.testcontainers	1.19.1
-Add these entries to your pom.xml.
+| Dependency                   | Group                     | Version |
+| ---------------------------- | ------------------------- | ------- |
+| spring-boot-starter-data-jpa | org.springframework.boot  | 3.2.5   |
+| spring-boot-starter-web      | org.springframework.boot  | 3.2.5   |
+| spring-kafka                 | org.springframework.kafka | 3.1.4   |
+| h2                           | com.h2database            | 2.2.224 |
+| spring-boot-starter-test     | org.springframework.boot  | 3.2.5   |
+| spring-kafka-test            | org.springframework.kafka | 3.1.4   |
+| kafka (Testcontainers)       | org.testcontainers        | 1.19.1  |
+
 
 6. Update Application Configuration
 
