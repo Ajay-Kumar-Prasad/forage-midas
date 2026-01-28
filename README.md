@@ -3,17 +3,6 @@ Project repo for the JPMC Advanced Software Engineering Forage program
 
 Task 1: Project Setup
 
-1
-
-2
-
-3
-
-4
-
-5
-
-6
 Here is your task
 1. Fork and Clone the Repository
 
