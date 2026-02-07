@@ -16,4 +16,7 @@ public class DatabaseConduit {
         userRepository.save(userRecord);
     }
 
+    public void deleteAllUsers() {
+        userRepository.deleteAll();
+    }
 }

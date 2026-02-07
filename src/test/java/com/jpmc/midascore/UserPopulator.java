@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserPopulator {
+
     @Autowired
     private FileLoader fileLoader;
 
@@ -14,10 +15,14 @@ public class UserPopulator {
     private DatabaseConduit databaseConduit;
 
     public void populate() {
+        databaseConduit.deleteAllUsers();
+
         String[] userLines = fileLoader.loadStrings("/test_data/lkjhgfdsa.hjkl");
+
         for (String userLine : userLines) {
             String[] userData = userLine.split(", ");
-            UserRecord user = new UserRecord(userData[0], Float.parseFloat(userData[1]));
+            UserRecord user =
+                    new UserRecord(userData[0], Float.parseFloat(userData[1]));
             databaseConduit.save(user);
         }
     }

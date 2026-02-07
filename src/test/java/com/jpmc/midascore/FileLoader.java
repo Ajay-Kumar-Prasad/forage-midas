@@ -1,5 +1,5 @@
 package com.jpmc.midascore;
-
+//loads a text file from your classpath and returns its contents as an array of lines.
 import org.springframework.stereotype.Component;
 import org.testcontainers.shaded.org.apache.commons.io.IOUtils;
 
